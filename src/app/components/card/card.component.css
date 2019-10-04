@@ -1,0 +1,83 @@
+.card {
+    position: relative;
+    overflow: auto;
+
+    background-color: white;
+    padding-left: 5px;
+
+    border-top: 1px solid gray;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.card_main {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.card_icon {
+    flex: initial;
+    align-self: top;
+}
+
+.card_name {
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: auto;
+    font-weight: bold;
+    display: none;
+}
+
+.card_text {
+    flex: 1;
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.card_bookmark {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    margin-right: 12px;
+    margin-left: auto;
+}
+
+
+.card_bookmark_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.card_info_icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 12px;
+
+    height: 20px;
+    width: 20px;
+}
+
+.card_info_text_container {
+    max-height: 0;
+    overflow: hidden;
+
+	/* Set our transitions up. 
+	-webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;*/
+}
+.card_info_text {
+
+    padding-left: 43px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}

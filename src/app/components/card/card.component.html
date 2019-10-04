@@ -1,1 +1,37 @@
-<p>card works!</p>
+<div class="card">
+  
+  <div class="card_name">
+    Name
+  </div>
+
+  <div class="card_main">
+
+    <div class="card_icon">
+      <img src="resources/icons/bible.png" class="card_icon_img" alt="bible vers" width="25" height="25">
+    </div>
+            
+    <div class="card_text">
+      {{ card.text }}
+    </div>
+    
+  </div>
+    
+  <label class="card_info">
+
+    <input type="checkbox" />
+    <div class="card_info_icon"></div>
+
+      <div class="card_info_text_container">
+        <hr>    
+        <div class="card_info_text">            
+          {{ card.info }}
+        </div>
+    </div>
+  </label>
+      
+
+  <label class="card_bookmark">
+    <input type="checkbox" class="card_bookmark_checkbox" (click)="toggleBookmark(card)" />
+    <div class="card_bookmark_icon"></div>
+  </label>
+</div>

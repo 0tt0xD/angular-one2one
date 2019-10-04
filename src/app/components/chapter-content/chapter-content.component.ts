@@ -8,7 +8,7 @@ import { Chapter } from '../../models/Chapter';
 })
 export class ChapterContentComponent implements OnInit {
 
-  @Input() chapter : Chapter 
+  @Input() chapter : Chapter; 
 
   constructor() { }
 
