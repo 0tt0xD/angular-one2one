@@ -1,0 +1,5 @@
+<app-chapter-card 
+*ngFor="let chapter of chapters; let i = index" 
+[chapter]="chapter"
+(click)="onClick(chapter, i)"
+></app-chapter-card>

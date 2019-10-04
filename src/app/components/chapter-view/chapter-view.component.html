@@ -1,13 +1,3 @@
-<div>
-
-<app-chapter-card 
-    *ngFor="let chapter of chapters" 
-    [chapter]="chapter"
-    (click)=onClick(chapter)
-></app-chapter-card>
-
-<div *ngIf="selectedChapter">
-    <app-chapter-content [chapter]="selectedChapter"></app-chapter-content>
-</div>
-
+<div *ngIf="chapter">
+        <app-chapter-content [chapter]="chapter"></app-chapter-content>
 </div>

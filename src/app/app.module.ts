@@ -10,6 +10,7 @@ import { ChapterViewComponent } from './components/chapter-view/chapter-view.com
 import { ChapterContentComponent } from './components/chapter-content/chapter-content.component';
 import { SubChapterComponent } from './components/sub-chapter/sub-chapter.component';
 import { CardComponent } from './components/card/card.component';
+import { ChapterOverviewComponent } from './components/chapter-overview/chapter-overview.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardComponent } from './components/card/card.component';
     ChapterViewComponent,
     ChapterContentComponent,
     SubChapterComponent,
-    CardComponent
+    CardComponent,
+    ChapterOverviewComponent
   ],
   imports: [
     BrowserModule,
