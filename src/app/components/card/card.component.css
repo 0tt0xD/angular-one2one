@@ -1,3 +1,14 @@
+#chapter_container {
+    background: #eeeeee;
+
+    display: none;
+    max-width: 100%;
+    min-height: 90vh;
+    z-index: 1;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .card {
     position: relative;
     overflow: auto;
@@ -49,11 +60,34 @@
     margin-right: 12px;
     margin-left: auto;
 }
+.card_bookmark input[type="checkbox"] {
+    display:none;
+}
+.card_bookmark input[type="checkbox"] + .card_bookmark_icon {
+    background:url('src/assets/img/bookmark-inactive.png') left top no-repeat;
+    background-size: 100%;
+}
+
+.card_bookmark input[type="checkbox"]:checked +  .card_bookmark_icon {
+    background:url('src/assets/img/bookmark-active.png') left top no-repeat;
+    background-size: 100%;
+}
+/* .card_bookmark input[type="checkbox"]:active +  .icon {
+    background:url('../icons/bookmark-hover.png') left top no-repeat;
+} */
+/* Lesezeichen rot, wenn angeklickt wird, Haken bleibt weg. */
 
 
 .card_bookmark_icon {
     width: 20px;
     height: 20px;
+}
+.card_info input[type="checkbox"] {
+    display:none;
+}
+.card_info input[type="checkbox"] + .card_info_icon {
+    background:url('src/assets/img/arrow-down.png') left top no-repeat;
+    background-size: 100%;
 }
 
 .card_info_icon {
@@ -66,6 +100,10 @@
     width: 20px;
 }
 
+.card_info input[type="checkbox"]:checked + .card_info_icon {
+    background:url('src/assets/img/arrow-up.png') left top no-repeat;
+    background-size: 100%;
+}
 .card_info_text_container {
     max-height: 0;
     overflow: hidden;
@@ -80,4 +118,7 @@
     padding-left: 43px;
     padding-right: 30px;
     padding-bottom: 10px;
+}
+.card_info input[type="checkbox"]:checked + .card_info_icon + .card_info_text_container {
+    max-height: 1000px;
 }

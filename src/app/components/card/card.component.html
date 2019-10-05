@@ -7,7 +7,7 @@
   <div class="card_main">
 
     <div class="card_icon">
-      <img src="resources/icons/bible.png" class="card_icon_img" alt="bible vers" width="25" height="25">
+      <img src="assets/img/{{ card.type }}.png" class="card_icon_img" alt="{{ card.type }}}" width="25" height="25">
     </div>
             
     <div class="card_text">
@@ -16,7 +16,7 @@
     
   </div>
     
-  <label class="card_info">
+  <label *ngIf="card.info" class="card_info">
 
     <input type="checkbox" />
     <div class="card_info_icon"></div>

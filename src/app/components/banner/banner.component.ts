@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-banner',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  constructor() { }
+  notMain : boolean = true;
+
+  constructor(
+    private router : Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  showMain() {
+    this.router.navigate(['/'])
   }
 
 }
