@@ -11,6 +11,8 @@ import { ChapterContentComponent } from './components/chapter-content/chapter-co
 import { SubChapterComponent } from './components/sub-chapter/sub-chapter.component';
 import { CardComponent } from './components/card/card.component';
 import { ChapterOverviewComponent } from './components/chapter-overview/chapter-overview.component';
+import { CardInfoComponent } from './components/card-info/card-info.component';
+import { BookmarkComponent } from './components/bookmark/bookmark.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ChapterOverviewComponent } from './components/chapter-overview/chapter-
     ChapterContentComponent,
     SubChapterComponent,
     CardComponent,
-    ChapterOverviewComponent
+    ChapterOverviewComponent,
+    CardInfoComponent,
+    BookmarkComponent
   ],
   imports: [
     BrowserModule,

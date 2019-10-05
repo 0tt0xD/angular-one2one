@@ -14,24 +14,9 @@
       {{ card.text }}
     </div>
     
-  </div>
+  </div>      
     
-  <label *ngIf="card.info" class="card_info">
+  <app-card-info *ngIf="card.info" [infoText]="card.info"></app-card-info>
 
-    <input type="checkbox" />
-    <div class="card_info_icon"></div>
-
-      <div class="card_info_text_container">
-        <hr>    
-        <div class="card_info_text">            
-          {{ card.info }}
-        </div>
-    </div>
-  </label>
-      
-
-  <label class="card_bookmark">
-    <input type="checkbox" class="card_bookmark_checkbox" (click)="toggleBookmark(card)" />
-    <div class="card_bookmark_icon"></div>
-  </label>
+  <app-bookmark></app-bookmark>
 </div>

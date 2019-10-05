@@ -8,11 +8,16 @@ import { SubChapter } from '../../models/SubChapter';
 })
 export class SubChapterComponent implements OnInit {
 
-  @Input() subChapter : SubChapter
+  @Input() subChapter : SubChapter;
+  isOpen : boolean = true;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggle() {    
+    this.isOpen = !this.isOpen;
   }
 
 }

@@ -15,9 +15,4 @@ export class CardComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleBookmark(card) {
-    console.log(`toggle ${card.text}`);
-    
-  }
-
 }

@@ -1,0 +1,30 @@
+.bookmark {
+    position: absolute;
+    right: 0; 
+    top: 0;
+
+    margin-right: 12px;
+    margin-left: auto;
+}
+.bookmark input[type="checkbox"] {
+    display:none;
+}
+.bookmark input[type="checkbox"] + .bookmark_icon {
+    background:url('src/assets/img/bookmark-inactive.png') left top no-repeat;
+    background-size: 100%;
+}
+
+.bookmark input[type="checkbox"]:checked +  .bookmark_icon {
+    background:url('src/assets/img/bookmark-active.png') left top no-repeat;
+    background-size: 100%;
+}
+/* .bookmark input[type="checkbox"]:active +  .icon {
+    background:url('../icons/bookmark-hover.png') left top no-repeat;
+} */
+/* Lesezeichen rot, wenn angeklickt wird, Haken bleibt weg. */
+
+
+.bookmark_icon {
+    width: 20px;
+    height: 20px;
+} 
